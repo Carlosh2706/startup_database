@@ -51,7 +51,6 @@ class _RegisterState extends State<Register> {
                   children: <Widget>[
                     TextFormField(
                       decoration: textInputDecoration.copyWith(labelText: 'Username'),
-                      obscureText: true,
                       validator: (val) => val.length < 6 ? 'Enter a valid name' : null,
                       onChanged: (val) {
                         setState(() {
